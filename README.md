@@ -3,6 +3,10 @@ Extract timestamps from camera trap images using OCR. Currently only supports Re
 
 ### Example Image & Output
 
+![Example camera trap image](sample/example.jpg)
+```
+2014-11-29 06:00:00
+```
 
 ## Setup
 1. Install tesseract (OCR library)
@@ -21,8 +25,8 @@ pip install -r requirements.txt
 
 Process a single image and return the timestamp:
 ```
-python extract.py --img [path/to/image/img.jpg]
->>> 
+python extract.py --img sample/example.jpg
+>>> 2014-11-29 06:00:00
 ```
 
 Process a directory of images and write results to a CSV file:
